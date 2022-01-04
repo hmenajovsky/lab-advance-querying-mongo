@@ -91,7 +91,7 @@
 
 ### 16. All the companies on the 'web' `category` that have more than 4000 employees. Sort them by the amount of employees in ascending order.
 
-- **`query`**: `{ $and: [ { category-code: {$eq: "web"} }, { number_of_employees: {$lt: 4000} } ] }`
+- **`query`**: `{ $and: [ { category_code: {$eq: "web"} }, { number_of_employees: {$lt: 4000} } ] }`
 - **`sort`**: `{number_of_employees: 1}` 
 - **`projection`**: `{name: 1, category_code: 1, number_of_employees: 1, _id: 0}` (not required but easy to read)
 
